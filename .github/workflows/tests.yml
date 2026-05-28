@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Instalar Google Chrome
+        uses: browser-actions/setup-chrome@v1
+
       - name: Instalar dependencias
         run: |
           pip install -r requirements.txt
